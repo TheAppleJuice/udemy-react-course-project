@@ -4,12 +4,13 @@ import Card from "../UI/Card";
 import React, { useState } from "react";
 
 function ExpenseItem(propsData) {
-
+//Adding state
     const [title, setTitle] =useState(propsData.title);
+    console.log('ExpenseItem is evaluated by React');
 
 
     const clickHandler = () => {
-        setTitle('Updated ! ');
+        setTitle('Updated ! '); //Setting new state
         console.log(title);
     };
 
